@@ -1,12 +1,17 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "ml.thecakeking.example.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "ClientConnectionMixin",
+    "GameMenuScreenMixin",
+    "FishingBobberEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "LivingEntityMixin",
+    "ClientPlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
